@@ -60,11 +60,54 @@
 }
 
 .projects-list {
+  height: 640px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   column-gap: 3rem;
   row-gap: 2.4rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "webdesign appdesign" "webdesign graphicdesign";
+}
+
+.projects-item:nth-child(1) {
+  grid-area: webdesign;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/image-web-design-large.jpg);
+
+  &:hover {
+    background-image: linear-gradient(
+        rgba(231, 129, 107, 0.8),
+        rgba(231, 129, 107, 0.8)
+      ),
+      url(../images/image-web-design-large.jpg);
+  }
+}
+
+.projects-item:nth-child(2) {
+  grid-area: appdesign;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/image-app-design.jpg);
+
+  &:hover {
+    background-image: linear-gradient(
+        rgba(231, 129, 107, 0.8),
+        rgba(231, 129, 107, 0.8)
+      ),
+      url(../images/image-app-design.jpg);
+  }
+}
+
+.projects-item:nth-child(3) {
+  grid-area: graphicdesign;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/image-graphic-design.jpg);
+
+  &:hover {
+    background-image: linear-gradient(
+        rgba(231, 129, 107, 0.8),
+        rgba(231, 129, 107, 0.8)
+      ),
+      url(../images/image-graphic-design.jpg);
+  }
 }
 
 .projects-item {
@@ -73,116 +116,130 @@
   align-items: center;
   justify-content: center;
   gap: 2.4rem;
-}
-.projects-item:nth-child(1) {
-  grid-column: 1/3;
-  grid-row: 1/3;
-  width: 541px;
-  height: 640px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/image-web-design-large.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 15px;
-  align-items: center;
-}
-
-.projects-item:nth-child(2) {
-  grid-column: 3/5;
-  grid-row: 1/2;
-  width: 541px;
-  height: 308px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/image-app-design.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  color: #ffffff;
   border-radius: 15px;
 }
 
-.projects-item:nth-child(3) {
-  grid-column: 3/5;
-  grid-row: 2/3;
-  width: 541px;
-  height: 308px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/image-graphic-design.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 15px;
-}
-
-.projects-item-text {
+.projects-text {
   font-family: Jost;
   font-size: 4rem;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.3;
   letter-spacing: 2px;
-  color: #ffffff;
 }
-.projects-item-content {
+
+.projects-content {
   font-family: Jost;
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.3;
   letter-spacing: 5px;
-  color: #ffffff;
+}
+.options {
+  padding-top: 16rem;
+  padding-bottom: 16rem;
+}
+.options-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10rem;
+}
+
+.options-main-text {
+  margin-top: 6.8rem;
+  margin-bottom: 3.2rem;
+  font-family: Jost;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: 5px;
   text-align: center;
+  color: #333136;
+}
+.options-main-content {
+  font-family: Jost;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.3;
+  text-align: center;
+  color: #333136;
+}
+
+.options-secondary-text {
+  margin-top: 4.8rem;
+  margin-bottom: 3.2rem;
+  font-family: Jost;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: 5px;
+  text-align: center;
+  color: #333136;
+}
+.options-secondary-content {
+  font-family: Jost;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.3;
+  text-align: center;
+  color: #333136;
+}
+
+.options-third-text {
+  margin-top: 4.8rem;
+  margin-bottom: 3.2rem;
+  font-family: Jost;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: 5px;
+  text-align: center;
+  color: #333136;
+}
+.options-third-content {
+  font-family: Jost;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.3;
+  text-align: center;
+  color: #333136;
+}
+
+.main-list {
+  width: 100%;
+  max-width: 350px;
+}
+
+.secondary-list {
+  width: 100%;
+  max-width: 350px;
+}
+
+.third-list {
+  width: 100%;
+  max-width: 350px;
 }
 
 @media screen and (max-width: 500px) {
-  .projects-container {
+  .options-container {
     flex-direction: column;
-    width: 100%;
-    max-width: 327px;
   }
 
-  .projects-list {
+  .options-main {
     flex-direction: column;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    row-gap: 2.5rem;
   }
 
-  .projects-item:nth-child(3) {
-    width: 327px;
-    height: 250px;
-    grid-column: 1/2;
-    grid-row: 3/4;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(../images/image-graphic-design.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 15px;
+  .options-secondary {
+    flex-direction: column;
   }
 
-  .projects-item:nth-child(2) {
-    width: 327px;
-    height: 250px;
-    grid-column: 1/2;
-    grid-row: 2/3;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(../images/image-app-design.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 15px;
-  }
-
-  .projects-item:nth-child(1) {
-    width: 327px;
-    height: 250px;
-    grid-column: 1/2;
-    grid-row: 1/2;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(../images/image-web-design-large.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 15px;
-    align-items: center;
+  .options-third {
+    flex-direction: column;
   }
 }
 
-@media screen and (max-width: 689px) {
+@media screen and (max-width: 768px) {
   .hero-container {
     flex-direction: column;
     text-align: center;
@@ -193,54 +250,48 @@
     height: auto;
   }
 
-  .projects-container {
-    flex-direction: column;
-    width: 100%;
-    max-width: 689px;
-  }
-
   .projects-list {
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "webdesign"
+      "appdesign"
+      "graphicdesign";
+  }
+
+  .projects-item {
+    width: 100%;
+    padding: 5.3rem 0;
+  }
+
+  .options-container {
     flex-direction: column;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    row-gap: 2.5rem;
   }
 
-  .projects-item:nth-child(3) {
-    width: 689px;
-    height: 200px;
-    grid-column: 1/3;
-    grid-row: 3/4;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(../images/image-graphic-design.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 15px;
+  .options-main {
+    display: flex;
   }
 
-  .projects-item:nth-child(2) {
-    width: 689px;
-    height: 200px;
-    grid-column: 1/3;
-    grid-row: 2/3;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(../images/image-app-design.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 15px;
+  .main-list {
+    flex-direction: column;
+    gap: 6.8rem;
   }
 
-  .projects-item:nth-child(1) {
-    width: 689px;
-    height: 200px;
-    grid-column: 1/3;
-    grid-row: 1/2;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(../images/image-web-design-large.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 15px;
-    align-items: center;
+  .options-secondary {
+    display: flex;
+  }
+
+  .secondary-list {
+    flex-direction: column;
+    gap: 6.8rem;
+  }
+
+  .options-third {
+    display: flex;
+  }
+
+  .third-list {
+    flex-direction: column;
+    gap: 6.8rem;
   }
 }
