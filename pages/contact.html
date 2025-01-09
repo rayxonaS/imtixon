@@ -10,7 +10,7 @@
   <body>
     <header class="header">
       <div class="header-container container">
-        <a class="site-logo" href="#">
+        <a class="site-logo" href="../index.html">
           <img
             class="site-logo-image"
             src="../images/logo-dark.png"
@@ -23,10 +23,10 @@
         <nav class="sitenav">
           <ul class="sitenav-list">
             <li class="sitenav-item">
-              <a class="sitenav-link" href="#">OUR COMPANY</a>
+              <a class="sitenav-link" href="./about.html">OUR COMPANY</a>
             </li>
             <li class="sitenav-item">
-              <a class="sitenav-link" href="#">LOCATIONS</a>
+              <a class="sitenav-link" href="./locations.html">LOCATIONS</a>
             </li>
             <li class="sitenav-item">
               <a class="sitenav-link" href="#">CONTACT</a>
@@ -35,5 +35,91 @@
         </nav>
       </div>
     </header>
+
+    <main class="main">
+      <div class="contact-container container">
+        <div class="contact-content">
+          <h2 class="contact-title">Contact Us</h2>
+          <p class="contact-text">
+            Ready to take it to the next level? Let’s talk about your project or
+            idea and find out how we can help your business grow. If you are
+            looking for unique digital experiences that’s relatable to your
+            users, drop us a line.
+          </p>
+        </div>
+        <div class="input-items">
+          <form>
+            <input
+              class="description"
+              type="text"
+              placeholder="Name"
+              required
+              minlength="3"
+              maxlength="10"
+            />
+            <span>
+              <hr />
+            </span>
+            <input
+              class="description"
+              type="text"
+              placeholder="Email Address"
+              required
+            />
+            <span>
+              <hr />
+            </span>
+            <input class="description" type="text" placeholder="Phone" />
+            <span>
+              <hr />
+            </span>
+            <input
+              class="description"
+              type="text"
+              placeholder="Your Message"
+              required
+            />
+            <span>
+              <hr />
+            </span>
+          </form>
+          <a class="button" href="#">Submit </a>
+        </div>
+      </div>
+
+      <section class="travel">
+        <div class="travel-container container">
+          <ul class="travel-list">
+            <li class="travel-item">
+              <img
+                src="../images/illustration-canada.svg"
+                alt=""
+                class="travel-item-image"
+              />
+              <h1 class="travel-item-text">Canada</h1>
+              <a href="" class="travel-item-btn">See Locations</a>
+            </li>
+            <li class="travel-item">
+              <img
+                src="../images/illustration-australia.svg"
+                alt=""
+                class="travel-item-image"
+              />
+              <h1 class="travel-item-text">Australis</h1>
+              <a href="" class="travel-item-btn">See Locations</a>
+            </li>
+            <li class="travel-item">
+              <img
+                src="../images/illustration-united-kingdom.svg"
+                alt=""
+                class="travel-item-image"
+              />
+              <h1 class="travel-item-text">United Kingdom</h1>
+              <a href="" class="travel-item-btn">See Locations</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
