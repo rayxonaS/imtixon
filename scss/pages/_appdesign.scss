@@ -1,0 +1,304 @@
+.header {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5.3rem;
+}
+
+.sitenav-list {
+  margin-left: auto;
+  display: flex;
+  gap: 4.2rem;
+}
+
+.sitenav-link {
+  font-family: Jost;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 2px;
+  color: #333136;
+}
+
+.sitenav-link:active {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 500px) {
+  .sitenav {
+    display: none;
+  }
+
+  .app-hero-container {
+    width: 100%;
+    max-width: 375px;
+    height: 320px;
+  }
+
+  .app-options {
+    flex-direction: column;
+  }
+
+  .app-item {
+    flex-direction: column;
+  }
+
+  .app-image {
+    width: 100%;
+    max-width: 327px;
+    height: 320px;
+  }
+
+  .app-content {
+    width: 100%;
+    max-width: 327px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .app-hero-container {
+    width: 100%;
+    max-width: 689px;
+    height: 252px;
+  }
+
+  .app-options {
+    grid-template-columns: 1fr;
+  }
+
+  .app-item {
+    display: flex;
+
+    .app-image {
+      border-radius: 15px 0 0 15px;
+      width: 100%;
+      max-width: 339px;
+    }
+  }
+
+  .app-projects {
+    flex-direction: column;
+  }
+
+  .app-projects-list {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "webdesign "
+      "graphicdesign";
+  }
+
+  .app-projects-item {
+    width: 100%;
+    padding: 5.3rem 0;
+  }
+
+  .app-projects-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.main {
+  padding-top: 6.4rem;
+  padding-bottom: 6.4rem;
+}
+.app-hero-container {
+  width: 100%;
+  max-width: 1111px;
+  height: 252px;
+  background-color: #e7816b;
+  background-image: url(../../images/bg-pattern-three-circles.svg);
+  background-repeat: repeat;
+  background-size: cover;
+  color: #ffffff;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-hero-text {
+  text-align: center;
+  font-family: Jost;
+  font-size: 4.8rem;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 2.4rem;
+}
+.app-hero-content {
+  width: 100%;
+  max-width: 730px;
+  font-family: Jost;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.app-options {
+  padding-top: 16rem;
+  padding-top: 16rem;
+}
+
+.app-option {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  column-gap: 3rem;
+  row-gap: 3.2rem;
+}
+.app-item {
+  app-image {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+  }
+}
+
+.app-content {
+  background-color: #fdf3f0;
+  border-radius: 0 0 15px 15px;
+  padding: 3.2rem;
+
+  &:hover {
+    background-color: #e7816b;
+    color: #ffffff;
+  }
+}
+.app-text {
+  font-family: Jost;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: 5px;
+  text-align: center;
+  color: #e7816b;
+
+  &:hover {
+    color: #ffffff;
+  }
+}
+.app-description {
+  font-family: Jost;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  color: #333136;
+
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+.app-projects {
+  padding-top: 16rem;
+  padding-bottom: 16rem;
+}
+
+.app-projects-list {
+  height: 308px;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "webdesign graphicdesign" "webdesign graphicdesign";
+}
+
+.app-projects-item:nth-child(1) {
+  grid-area: webdesign;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/image-web-design-large.jpg);
+}
+
+.app-projects-item:nth-child(2) {
+  grid-area: graphicdesign;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/image-app-design.jpg);
+}
+
+.app-projects-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+  color: #ffffff;
+  border-radius: 15px;
+}
+
+.app-projects-text {
+  font-family: Jost;
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: 2px;
+}
+
+.app-projects-content {
+  font-family: Jost;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: 5px;
+}
+
+.cta {
+  padding-top: 12rem;
+}
+.cta-container {
+  background-color: #e7816b;
+  width: 100%;
+  max-width: 1111px;
+  height: 292px;
+  background-image: url(../images/bg-pattern-two-circles.svg);
+  background-repeat: repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  gap: 30rem;
+  color: #ffffff;
+}
+
+.cta-content {
+  margin-top: 5rem;
+  width: 100%;
+  max-width: 459px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cta-content-text {
+  font-family: Jost;
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 4rem;
+}
+.cta-description {
+  font-family: Jost;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.3;
+}
+.cta-btn {
+  align-items: center;
+  justify-content: center;
+  width: 152px;
+  height: 56px;
+  border-radius: 8px;
+  font-family: Jost;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: 1px;
+  color: #333136;
+  padding: 1.7rem 1.9rem 1.7rem 1.8rem;
+  background-color: #ffffff;
+}
