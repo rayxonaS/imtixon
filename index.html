@@ -4,6 +4,83 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Design</title>
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <link rel="stylesheet" href="./scss/style.scss" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="header-container container">
+        <a class="site-logo" href="#">
+          <img
+            class="site-logo-image"
+            src="./images/logo-dark.png"
+            alt=""
+            width="196px"
+            height="24px"
+          />
+        </a>
+
+        <nav class="sitenav">
+          <ul class="sitenav-list">
+            <li class="sitenav-item">
+              <a class="sitenav-link" href="#">OUR COMPANY</a>
+            </li>
+            <li class="sitenav-item">
+              <a class="sitenav-link" href="#">LOCATIONS</a>
+            </li>
+            <li class="sitenav-item">
+              <a class="sitenav-link" href="#">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="hero-container container">
+        <div class="hero-content">
+          <h1 class="hero-text">
+            Award-winning custom designs and digital branding solutions
+          </h1>
+          <p class="hero-description">
+            With over 10 years in the industry, we are experienced in creating
+            fully responsive websites, app design, and engaging brand
+            experiences. Find out more about our services.
+          </p>
+          <a class="hero-btn" href="#">Learn More</a>
+        </div>
+        <picture>
+          <source srcset="./images/hero-mobile.1.png" media="max-width:375px" />
+
+          <source srcset="./images/hero-tablet.1.png" media="max-width:689px" />
+          <img
+            class="hero-image"
+            src="./images/hero-desktop.png"
+            alt=""
+            width="281px"
+            height="571px"
+          />
+        </picture>
+      </div>
+
+      <section class="projects">
+        <div class="projects-container container">
+          <div class="projects-list">
+            <div class="projects-item">
+              <h2 class="projects-item-text">WEB DESIGN</h2>
+              <p class="projects-item-content">VIEW PROJECTS</p>
+            </div>
+            <div class="projects-item">
+              <h2 class="projects-item-text">APP DESIGN</h2>
+              <p class="projects-item-content">VIEW PROJECTS</p>
+            </div>
+            <div class="projects-item">
+              <h2 class="projects-item-text">Graphic DESIGN</h2>
+              <p class="projects-item-content">VIEW PROJECTS</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
